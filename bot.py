@@ -54,7 +54,7 @@ def give_data(message):
         bot.send_message(message.chat.id, "Будь ласка, оберіть місто", reply_markup=markup_city)
     else:
         match message.text:
-            case "У прокаті": # what programm doing when there is message "У проакті"
+            case "У прокаті": # what programm doing when there is message "У прокаті"
                 movies = parsing.get_movies(request_type="current", city_href=city)
                 for item in movies:
                     mess_text = f"Назва фільму: {item['title']}\nВікове обмеження: {item['age']}\nЖанри: {item['genres']}\n{item['href']}"

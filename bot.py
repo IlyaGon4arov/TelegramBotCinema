@@ -22,7 +22,7 @@ def welcome(message):
     markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
     button = telebot.types.KeyboardButton("/city")
     markup.add(button)
-    bot.send_message(message.chat.id, "⚡ Привіт! Я бот, який створений для того, щоб зручно переглядати наявність фільмів у кінопрокаті. ⚡\nЯ спираюсь на дані сайту wizoria.ua")
+    bot.send_message(message.chat.id, "⚡ Привіт! Я бот, який створений для того, щоб зручно переглядати наявність фільмів у кінопрокаті. ⚡\nЯ спираюсь на дані сайту www.wizoria.ua")
     bot.send_message(message.chat.id, "Спочатку давай оберем місце, за яким тобі буде зручно слідкувати. Обери один із запропонованих нижче варіантів!", reply_markup=markup)
 
 

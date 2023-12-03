@@ -23,7 +23,7 @@ def welcome(message):
     button = telebot.types.KeyboardButton("/city")
     markup.add(button)
     bot.send_message(message.chat.id, "⚡ Привіт! Я бот, який створений для того, щоб зручно переглядати наявність фільмів у кінопрокаті. ⚡\nЯ спираюсь на дані сайту www.wizoria.ua")
-    bot.send_message(message.chat.id, "Спочатку давай оберем місце, за яким тобі буде зручно слідкувати. Обери один із запропонованих нижче варіантів!", reply_markup=markup)
+    bot.send_message(message.chat.id, "Спочатку давай оберем місце, за яким тобі буде зручно слідкувати. Напиши у чат команду /city чи нажми на кнопку нижче", reply_markup=markup)
 
 
 @bot.message_handler(commands=["city"]) # what programm doing when there is command "city"
